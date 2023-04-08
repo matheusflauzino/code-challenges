@@ -1,6 +1,6 @@
 # Code Challenges and Programming Problems
 
-This repository contains programming problems solved by me. The aim is to practice and improve problem solving skills.
+This repository contains programming problems solved by me. The goal is to practice and improve problem solving skills.
 
 Problems range in difficulty from simpler problems like adding two numbers to advanced problems.
 
