@@ -6,11 +6,11 @@
  * @return {number[][]}
  */
 var floodFill = function(image, sr, sc, color) {
-    let colorToReplace = image[r][c];
-    if(colorToReplace === replacement) return image;
+    let colorToReplace = image[sr][sc];
+    if(colorToReplace === color) return image;
     
-    let q = [[r, c]];
-    image[r][c] = replacement;
+    let q = [[sr, sc]];
+    image[sr][sc] = color;
     while(q.length > 0){
         let [y, x] = q.shift();
         let top = [y - 1, x], bot = [y + 1, x];
@@ -23,7 +23,7 @@ var floodFill = function(image, sr, sc, color) {
             let nColor = inBounds ? image[ny][nx] : -1;
             if(inBounds && nColor === colorToReplace){
                 q.push([ny, nx]);
-                image[ny][nx] = replacement;
+                image[ny][nx] = color;
             }
         }
     }
